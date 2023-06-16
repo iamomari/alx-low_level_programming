@@ -4,10 +4,9 @@
  * main : Represents the entry point for code execution
  *  
  * Return : Always 0 (success)
- i*/
-
+ * */
 int main(void)
 {
 	puts("\"programmimg is like building a multilimgual puzzle");
 	return(0);
-} 
+}
