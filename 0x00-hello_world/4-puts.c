@@ -1,7 +1,5 @@
-#!/bin/bash
 #include <stdio.h>
- 
-/**
+ /**
  * main : Represents the entry point for code execution
  *  
  * Return : Always 0 (success)
