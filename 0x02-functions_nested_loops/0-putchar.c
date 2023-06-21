@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * short Description: this prints '_putchar', followd by a new line.
  *
