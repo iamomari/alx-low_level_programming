@@ -10,22 +10,23 @@
  */
 int print_sign(int n)
 {
-	int mir;
+    int mir;
 
-	if (n > 0)
-	{
-		mir = 1;
-		_putchar('+');
-	}
-	else if (n == 0)
-	{
-		mir = 0;
-		_putchar('0');
-	}
-	else
-	{
-		mir = -1;
-		_putchar('-');
-	}
-	return (mir);
+    if (n > 0)
+    {
+        mir = 1;
+        _putchar('+');
+    }
+    else if (n == 0)
+    {
+        mir = 0;
+        _putchar('0');
+    }
+    else
+    {
+        mir = -1;
+        _putchar('-');
+    }
+    return (mir);
 }
+
