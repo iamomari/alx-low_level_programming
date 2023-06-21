@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 0; i < length; i++)
 		_putchar(mir[i]);
-	-putchar('\n');
+	_putchar('\n');
 
 	return(0);
 }
