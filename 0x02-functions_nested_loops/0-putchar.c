@@ -17,5 +17,5 @@ int main(void)
 		_putchar(mir[i]);
 	_putchar('\n');
 
-	return(0);
+	return (0);
 }
