@@ -10,13 +10,13 @@
  */
 int main(void)
 {
-    char mir[] = "_putchar";
-    int length = strlen(mir), i;
+	char mir[] = "_putchar";
+	int length = strlen(mir), i;
 
-    for (i = 0; i < length; i++)
-        _putchar(mir[i]);
+	for (i = 0; i < length; i++)
+		_putchar(mir[i]);
 
-    _putchar('\n');
+	_putchar('\n');
 
-    return (0);
+	return (0);
 }
