@@ -11,22 +11,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
+	int dest_len = 0;
+
+	// Find the length of the destination string
+	
+
+	while (dest[dest-len] != '\0')
+		dest_len++;
+
+	//copy at most n bytes from src to dest
 	int i;
-	char *ptr = dest;
 
-	while (*ptr != '\0')
-	{
-		ptr++;
-	}
+	for (i = 0; i < n && src[i] != '\0'; i++)
+		dest[dest_len + 1] = src[i];
 
-	for (i = 0; i < n && *src != '\0'; i++)
-	{
-		*ptr = *src;
-		src++;
-		ptr++;
-	}
-
-	*ptr + '\0';
+	dest[dest_len + i] = '\0';
 
 	return (dest);
 }
