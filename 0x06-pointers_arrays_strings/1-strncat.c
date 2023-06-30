@@ -6,16 +6,14 @@
  * @src: Second string
  * @n: number of bytes to concatenate from second string.
  *
- * Return:a pointer to the resulting string dest
+ * Return: a pointer to the resulting string.
  */
 
 char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len = 0;
 
-	// Find the length of the destination string
-	
-
+	// Find the length of the destination string	
 	while (dest[dest-len] != '\0')
 		dest_len++;
 
@@ -27,5 +25,5 @@ char *_strncat(char *dest, char *src, int n)
 
 	dest[dest_len + i] = '\0';
 
-	return (dest);
+	return dest;
 }
