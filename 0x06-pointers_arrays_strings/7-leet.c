@@ -20,8 +20,8 @@ char *leet(char *s)
 		{
 			if (old[i] == *s)
 			{
-				*s =new[i];
-				braek;
+				*s = new[i];
+				break;
 			}
 			i++;
 		}
