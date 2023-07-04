@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _memset - a function that fills n bytes of memory area
  * pointed to by s with constant byte b
