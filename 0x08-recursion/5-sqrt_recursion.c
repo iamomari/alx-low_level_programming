@@ -1,26 +1,38 @@
-#include "main.h"
+#include "main"
 
 /**
- * is_prime_number - checks if a number is prime
- * @n: integer
- * Return: 1 if n is a prime number, 0 if not
+ * _sqrt_recursion - Calculates the natural square root of a number
+ * @n: Number to find the square root of
+ *
+ * Return: Square root if found, -1 otherwise
  */
-int is_prime_number(int n)
+int _sqrt_recursion(int n)
 {
-	return (_prime(n, 2));
+	if (n < 0)
+		return -1;
+	return (sqrt_helper(n, 0, n));
 }
 
 /**
- * _prime - helper function to check for prime number
- * @n: integer
- * @i: integer
- * Return: 1 if n is a prime number, 0 if not
+ * sqrt_helper - Recursive helper function to find the square root
+ * @n: Number to find the square root of
+ * @start: Start of the search range
+ * @end: End of the search range
+ *
+ * Return: Square root if found, -1 otherwise
  */
-int _prime(int n, int i)
+int sqrt_helper(int n, int start, int end)
 {
-	if (i >= n && n >= 2)
-		return (1);
-	if (n % i == 0 || n < 2)
-		return (0);
-	return (_prime(n, i + 1));
+	if (start > end)
+		return -1;
+
+	int mid = (start + end) / 2;
+	int square = mid * mid;
+
+	if (square == n)
+		return mid;
+	else if (square < n)
+		return sqrt_helper(n, mid + 1, end);
+	else
+		return sqrt_helper(n, start, mid - 1);
 }
