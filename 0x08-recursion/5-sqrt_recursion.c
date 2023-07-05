@@ -20,7 +20,7 @@ int _prime(int n, int i)
 {
 	if (i >= n && n >= 2)
 		return (1);
-	if (n % 1 == 0 || n < 2)
+	if (n % i == 0 || n < 2)
 		return (0);
 	return (_prime(n, i + 1));
 }
