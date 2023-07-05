@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _strchr - function that locates character in a string
- * @s: string
- * @c: character to be located
+ * _strchr - Locates character in a string
+ * @s: Pointer to the string
+ * @c: Character to be located
+ *
  * Return: string after character or NULL
  */
 
@@ -15,8 +16,9 @@ char *_strchr(char *s, char c)
 		{
 			return (s);
 		}
-		s++
+		s++;
 	}
+
 	if (*s == '\0' && *s == c)
 	{
 		return (s);
