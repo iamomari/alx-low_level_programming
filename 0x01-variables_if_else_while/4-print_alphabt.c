@@ -1,28 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
+#include <string.h>
 
 /**
- * main - Entry point
- *
- * prints all lowercase alpabets except e and q
+ * main - Prints the alphabet without q and e.
  *
  * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	char Lcase, e, q;
+	int i;
 
-	e = 'e';
-	q = 'q';
-
-	for (Lcase = 'a'; Lcase <= 'z'; Lcase++)
+	for (i = 97; i < 123; i++)
 	{
-		if (Lcase != e && Lcase != q)
-			putchar(Lcase);
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
 	}
 	putchar('\n');
-
 	return (0);
 }
